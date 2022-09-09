@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+	--clr-primary-orange: hsl(25, 97%, 53%);
+	--clr-White: hsl(0, 0%, 100%);
+	--clr-light-Grey: hsl(217, 12%, 63%);
+	--clr-medium-grey: hsl(216, 12%, 54%);
+	--clr-dark-grey: hsla(216, 8%, 12%, 0.785);
+	--clr-dark-blue: hsl(213, 19%, 18%);
+	--clr-very-dark-blue: hsl(216, 12%, 8%);
+
+	--fs-paragraph: 15px;
+	--ff-primary: 'Overpass', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	font-family: var(--ff-primary);
+	background: var(--clr-very-dark-blue);
+	line-height: 1.5;
+}
+
+.grid {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 1rem;
+}
+
+.btn {
+	background: var(--clr-primary-orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+	color: var(--clr-White);
+    border: 0;
+	padding: 0.9rem 1.2rem;
+    margin-top: 1.5rem;
+	display: block;
+	width: 100%;
+	border-radius: 200px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: var(--clr-primary-orange);
+	background-color: var(--clr-White);
+}
+
+.card {
+	padding: 1.5rem;
+	background: var(--clr-dark-blue);
+	max-width: 25rem;
+	border-radius: 20px;
+}
+
+.img-wrap {
+	width: 40px;
+	height: 40px;
+	background-color: var(--clr-dark-grey);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-wrap img {
+	width: 20px;
+}
+
+.card-heading {
+	margin: 1.3rem 0 0.5rem;
+	color: var(--clr-White);
+}
+
+.card-text {
+	font-size: var(--fs-paragraph);
+	color: var(--clr-medium-grey);
+}
+
+.card-feedback {
+	width: 100%;
+	margin: 1.5rem 0;
+}
+
+.score-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.score{
+    height: 50px;
+    width: 50px;
+    background: var(--clr-dark-grey);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.score:hover{
+    background: var(--clr-medium-grey);
+}
+
+.score.active {
+    background-color: var(--clr-primary-orange);
+}
+
+.score small{
+    font-size: 17px;
+    color: var(--clr-White);
+    font-weight: 700;
+}
+
+.feedback-img{
+	width: 60%;
+	display: block;
+	margin-inline: auto;
+	padding-bottom: 1rem;
+}
+
+.feedback {
+	width: 75%;
+	background-color: var(--clr-dark-grey);
+	color: var(--clr-primary-orange);
+	padding: .5rem 0;
+	border-radius: 100px;
+	font-size: var(--fs-paragraph);
+	margin: 1.5rem auto 2rem;
+}
+
+
+.text h2 {
+	color: var(--clr-White);
+}
+
+.text p {
+	color: var(--clr-light-Grey);
+	font-size: var(--fs-paragraph);
+	padding-top: 0.5rem;
+}
