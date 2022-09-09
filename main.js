@@ -2,8 +2,12 @@ const btn = document.getElementById('btn')
 const scoreList = document.querySelector('.score-container')
 const scores = document.querySelectorAll('.score')
 const feedbackPanel = document.querySelector('.card')
-let selectedFeedback = '5'
+let selectedFeedback
 
+
+scoreList.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
 
 // select a score
 scores.forEach(score => {
